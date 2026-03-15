@@ -1,5 +1,15 @@
 {
   "projects": {
-    "default": "ivangolosinda-prompt-2026"
-  }
+    "default": "ivancepegolosinda"
+  },
+  "targets": {
+    "ivangolosinda-prompt-2026": {
+      "hosting": {
+        "portfolio": [
+          "ivancepegolosinda"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

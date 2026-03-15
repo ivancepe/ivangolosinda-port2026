@@ -19,7 +19,7 @@ const resumeData = {
     website: 'https://ivancepegolosinda.web.app',
     summary:
       'Highly skilled software developer with hands-on experience building cloud-based web systems using modern full-stack technologies. Skilled in developing scalable applications using ReactJS, TailwindCSS, NodeJS, and PostgreSQL, and deploying production systems on Google Cloud Platform. Experienced in cloud-native architecture using Cloud Run, Firebase Hosting, and Cloud SQL. Strong foundation in system design, deployment pipelines, and cross-functional collaboration.',
-    image: 'public/images/profile-image2.png'
+    image: '/images/profile-image2.png'
   },
   skills: [
     {
