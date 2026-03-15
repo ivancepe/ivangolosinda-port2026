@@ -353,7 +353,7 @@ export default function DigitalResume() {
                     Focus
                   </p>
                   <p className="mt-2 font-semibold text-slate-700">
-                    Cloud-native systems, full-stack delivery, QA
+                    Cloud-native projects, full-stack delivery, QA
                   </p>
                   <p className="text-xs text-slate-500">
                     ReactJS - NodeJS - GCP - PostgreSQL
