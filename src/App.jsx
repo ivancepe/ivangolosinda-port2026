@@ -383,7 +383,7 @@ export default function DigitalResume() {
                     </p>
                   </div>
                   <a
-                    href="/Golosinda Resume 2026.pdf"
+                    href="/GOLOSINDA - JUN 2026 Resume.pdf"
                     download
                     className="inline-flex items-center gap-2 border border-[#18223b]/40 bg-[#18223b]/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[#18223b] transition hover:border-[#18223b] hover:bg-[#18223b]/10"
                   >
