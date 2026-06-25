@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Globe, Download } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Download } from 'lucide-react';
 
 /**
  * ==========================================
@@ -17,6 +17,7 @@ const resumeData = {
     phone: '+63 965 210 7968',
     email: 'ivangolosinda2@gmail.com',
     website: 'https://ivancepegolosinda.web.app',
+    github: 'https://github.com/ivancepe',
     summary:
       'Highly skilled software developer with hands-on experience building cloud-based web systems using modern full-stack technologies. Skilled in developing scalable applications using ReactJS, TailwindCSS, NodeJS, and PostgreSQL, and deploying production systems on Google Cloud Platform. Experienced in cloud-native architecture using Cloud Run, Firebase Hosting, and Cloud SQL. Strong foundation in system design, deployment pipelines, and cross-functional collaboration.',
     image: '/images/profile-image2.png'
@@ -398,7 +399,7 @@ export default function DigitalResume() {
                     label={header.phone}
                     href={`tel:${header.phone.replace(/\s/g, '')}`}
                   />
-                  <ContactRow icon={Globe} label="Portfolio Website" sublabel={header.website} href={header.website} newTab />
+                  <ContactRow icon={Github} label="Github Profile" sublabel={header.github} href={header.github} newTab />
                   <ContactRow icon={MapPin} label={header.location} sublabel="Philippines" />
                 </div>
               </div>
