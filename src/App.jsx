@@ -281,7 +281,7 @@ const HighlightCard = ({ title, items, delay = 0, onItemClick }) => (
  * ==========================================
  * MAIN APPLICATION
  * ==========================================
- */
+ *///
 export default function DigitalResume() {
   const [lightbox, setLightbox] = useState(null);
   const { header, skills, experience, education, awards, certifications, projects } = resumeData;
