@@ -13,11 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      # Added 'npm ci' to ensure dependencies are installed in the cloud
-      - run: npm ci && npm run build
+      - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          # Updated to use the NEW project secret and ID
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_IVANCEPEGOLOSINDA }}
           projectId: ivancepegolosinda
