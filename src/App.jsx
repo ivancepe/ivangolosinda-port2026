@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin, Github, Download } from 'lucide-react';
  * ==========================================
  * DATA LAYER
  * ==========================================
- */////
+ */
 const placeholderCertificate = '/image/cert-1.jpn';
 
 const resumeData = {
