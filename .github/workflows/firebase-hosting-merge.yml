@@ -9,11 +9,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      # 1. Install dependencies and build the project
+      # 1. Force Node 20 to prevent authentication network drops
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      # 2. Install dependencies and build the project
       - run: npm ci && npm run build
       
-      # 2. Deploy directly to the live site
+      # 3. Deploy directly to the live site
       - uses: FirebaseExtended/action-hosting-deploy@v0
+        env:
+          # Allows the Firebase action to use the older Node environment without failing
+          ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_IVANCEPEGOLOSINDA }}'
